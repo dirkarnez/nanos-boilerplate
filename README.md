@@ -1,5 +1,6 @@
-github-docker-compose-action
-============================
-From https://github.com/peter-evans/docker-compose-actions-workflow
+nanos-boilerplate
+=================
+[![Actions Status](https://github.com/dirkarnez/nanos-boilerplate/workflows/docker-compose-actions-workflow/badge.svg)](https://github.com/dirkarnez/nanos-boilerplate/actions)
 
-[![Actions Status](https://github.com/dirkarnez/github-docker-compose-action/workflows/docker-compose-actions-workflow/badge.svg)](https://github.com/dirkarnez/github-docker-compose-action/actions)
+### TODOs
+- [ ] save built artifacts for local testing
