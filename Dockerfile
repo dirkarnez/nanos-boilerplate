@@ -4,6 +4,7 @@ COPY ./index.js .
 
 RUN apt-get update -y \ 
   && apt-get -y --no-install-recommends install \
+     ca-certificates \
      build-essential \
      qemu-kvm \
      qemu-utils \
