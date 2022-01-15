@@ -12,6 +12,6 @@ RUN apt-get update -y \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && curl https://ops.city/get.sh -sSfL | sh
 
-CMD ops pkg load node_v14.2.0 -p 8083 -f -n -a hi.js
+CMD ops pkg load node_v14.2.0 -p 8083 -f -n -a index.js
 
 EXPOSE 8083
