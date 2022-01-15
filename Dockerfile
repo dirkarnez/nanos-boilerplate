@@ -1,10 +1,9 @@
-FROM golang:1.17.0-alpine
+FROM curlimages/curl:latest
 
-COPY . /go/src/github.com/dirkarnez/golang-hello-world
-WORKDIR /go/src/github.com/dirkarnez/golang-hello-world
+COPY ./index.js .
 
-RUN go build -o app
+RUN curl https://ops.city/get.sh -sSfL | sh
 
-ENTRYPOINT [ "./app" ]
+CMD ops pkg load node_v14.2.0 -p 8083 -f -n -a hi.js
 
-EXPOSE 5000
+EXPOSE 8083
