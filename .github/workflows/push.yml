@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-        run: docker-compose up --build # --detach # docker-compose up --build
+        run: docker-compose up --build --detach # docker-compose up --build
       - uses: actions/upload-artifact@v2
         with:
           name: built-image
