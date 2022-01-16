@@ -3,7 +3,7 @@
     "Args": ["index.js "],
     "NightlyBuild": true,
     "RunConfig": {
-        "Ports": ["8083"]
+        "Ports": ["8083"],
         "Bridged": true
     }
 }
