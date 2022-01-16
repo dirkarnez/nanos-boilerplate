@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
 COPY ./index.js .
+COPY ./config.json .
 
 RUN apt-get update -y \ 
   && apt-get -y --no-install-recommends install \
@@ -13,7 +14,7 @@ RUN apt-get update -y \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && curl https://ops.city/get.sh -sSfL | sh
 
-CMD echo "$HOME/.ops/bin/ops pkg load node_v14.2.0 -p 8083 -f -n -a index.js" > commands.txt && cat commands.txt | bash
-
+# CMD echo "$HOME/.ops/bin/ops pkg load node_v14.2.0 -p 8083 -f -n -a index.js" > commands.txt && cat commands.txt | bash
+CMD echo "$HOME/.ops/bin/ops build -c config.json -i mynewimg && cd $HOME/.ops/.ops/images/ && ls" > commands.txt && cat commands.txt | bash
 
 EXPOSE 8083
