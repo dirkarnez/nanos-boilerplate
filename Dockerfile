@@ -16,7 +16,7 @@ RUN apt-get update -y \
 
 # CMD echo "$HOME/.ops/bin/ops pkg load node_v14.2.0 -p 8083 -f -n -a index.js" > commands.txt && cat commands.txt | bash
 # CMD echo "$HOME/.ops/bin/ops build mynewimgelf -c config.json -i mynewimg  && cd $HOME/.ops/images/ && ls" > commands.txt && cat commands.txt | bash
-CMD echo "$HOME/.ops/bin/ops image create --nightly --package node_v14.2.0 -c config.json -i new_img && cd $HOME/.ops/images/ && ls" > commands.txt && cat commands.txt | bash
+CMD echo "$HOME/.ops/bin/ops image create --nightly --package node_v14.2.0 -c config.json -i new_img && cd $HOME/.ops/images/ && cp $HOME/.ops/images/new_img.img /new_img.img" > commands.txt && cat commands.txt | bash
 
 
 EXPOSE 8083
