@@ -2,7 +2,6 @@
     "Files": ["index.js"],
     "Dirs": ["."],
     "Args": ["index.js "],
-    "Program": "node_v14.2.0",
     "NightlyBuild": true,
     "RunConfig": {
         "Ports": ["8083"]
