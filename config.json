@@ -4,5 +4,6 @@
     "NightlyBuild": true,
     "RunConfig": {
         "Ports": ["8083"]
+        "Bridged": true
     }
 }
