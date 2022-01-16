@@ -10,6 +10,6 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: built-image
-          path: /images/new_img.img
+          path: new_img.img
       - name: Test
         run: docker run --network container:ops-frontend appropriate/curl -s --retry 10 --retry-connrefused http://localhost:8083/
