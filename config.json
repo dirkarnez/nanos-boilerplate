@@ -3,6 +3,9 @@
     "Args": ["index.js "],
     "NightlyBuild": true,
     "RunConfig": {
+        "Background": false,
+        "ShowDebug": true,
+        "ShowErrors": true,
         "Ports": ["8083"]
     }
 }
