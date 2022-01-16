@@ -15,6 +15,6 @@ RUN apt-get update -y \
   && curl https://ops.city/get.sh -sSfL | sh
 
 # CMD echo "$HOME/.ops/bin/ops pkg load node_v14.2.0 -p 8083 -f -n -a index.js" > commands.txt && cat commands.txt | bash
-CMD echo "$HOME/.ops/bin/ops build -c config.json -i mynewimg && cd $HOME/.ops/images/ && ls" > commands.txt && cat commands.txt | bash
+CMD echo "$HOME/.ops/bin/ops build mynewimgelf -c config.json -i mynewimgelf  && cd $HOME/.ops/images/ && ls" > commands.txt && cat commands.txt | bash
 
 EXPOSE 8083
