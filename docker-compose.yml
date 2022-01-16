@@ -5,6 +5,8 @@ services:
     build: .
     ports:
       - "8083:8083"
+    volumes:
+      - .:/root/.ops/images/
   # redis:
   #   container_name: redis-backend
   #   image: "redis:alpine"
