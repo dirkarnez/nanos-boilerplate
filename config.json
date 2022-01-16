@@ -1,6 +1,5 @@
 {
     "Files": ["index.js"],
-    "Dirs": ["."],
     "Args": ["index.js "],
     "NightlyBuild": true,
     "RunConfig": {
