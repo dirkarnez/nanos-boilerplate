@@ -1,6 +1,6 @@
 {
     "Files": ["index.js"],
-    "Args": ["index.js "],
+    "Args": ["index.js"],
     "NightlyBuild": true,
     "RunConfig": {
         "Background": false,
