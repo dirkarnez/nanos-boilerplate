@@ -21,5 +21,8 @@ qemu-system-x86_64 -machine q35 -device pcie-root-port,port=0x10,chassis=1,id=pc
 "Mkfs": "/root/.ops/nightly/mkfs",
 ```
 
+### Notes
+- For using [local-boot-with-qemu.bat](local-boot-with-qemu.bat), latest [QEMU](https://qemu.weilnetz.de/w64/)(unzip and use) should be used.
+
 ### TODOs
 - [x] save built artifacts for local testing
