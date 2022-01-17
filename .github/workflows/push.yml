@@ -7,9 +7,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the stack
         run: docker-compose up --build --detach # docker-compose up --build
-      - uses: actions/upload-artifact@v2
-        with:
-          name: built-image
-          path: new_img.img
       - name: Test
         run: docker run --network container:ops-frontend appropriate/curl -s --retry 100 --retry-connrefused http://localhost:8083/
