@@ -26,3 +26,4 @@ qemu-system-x86_64 -machine q35 -device pcie-root-port,port=0x10,chassis=1,id=pc
 
 ### TODOs
 - [x] save built artifacts for local testing
+- [ ] `local-run.cmd` works, but local's docker's `volume` cannot find `new_img.img`
